@@ -63,7 +63,8 @@ US_corr <- US_corr %>%
 ## Make table of library and canopus IDs
 ## These dataframes come from iimn collapsed outputs from GNPS and Sirius
 ## For more information, see this script: https://github.com/Sydney-Thomas/iimn_clean_normalize
-lib_US <- US_corr %>% dplyr::select(To) %>% unique()
+lib_US <- US_corr %>% dplyr::select(To, From, cor)
+lib_US <- lib_US %>% pivot_wider(names_from = "From", values_from = "cor")
 lib <- read.csv("./Example_Data/library_matches.csv")
 lib$Metabolite <- paste0("X", lib$Metabolite)
 can <- read.csv("./Example_Data/canopus_matches.csv")
