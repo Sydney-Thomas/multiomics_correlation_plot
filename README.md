@@ -11,7 +11,9 @@ On the statistical side, Spearman correlations are used since they don't assume 
 
 # What are the outputs?
 Two correlation plots are created. The first is a circle correlation plot. This type of plot is useful when you want an overview of the data without any prior knowledge of what factors are important.
+
 ![Circle](https://github.com/Sydney-Thomas/multiomics_correlation_plot/blob/1b685ccaf1a4236cbf4caffebaee2ed1b4e7a4f4/Circle_Correlation.png)
 
 The next is a column correlation plot that highlights specific features. This type of plot is useful if you already have a handful of features that you're interested in.
+
 ![Column](https://github.com/Sydney-Thomas/multiomics_correlation_plot/blob/1b685ccaf1a4236cbf4caffebaee2ed1b4e7a4f4/Column_Correlation.png)
